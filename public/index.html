@@ -1,0 +1,30 @@
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M28.72 77.16L28.72 77.16Q23.84 77.16 19.60 75.36Q15.36 73.56 12.24 70.08Q9.12 66.60 7.32 61.60Q5.52 56.60 5.52 50.12L5.52 50.12Q5.52 43.72 7.32 38.68Q9.12 33.64 12.28 30.12Q15.44 26.60 19.80 24.72Q24.16 22.84 29.36 22.84L29.36 22.84Q34.16 22.84 37.92 24.80Q41.68 26.76 44.08 29.32L44.08 29.32L39.60 34.36Q37.60 32.28 35.12 31.04Q32.64 29.80 29.36 29.80L29.36 29.80Q25.84 29.80 22.96 31.20Q20.08 32.60 18.04 35.20Q16.00 37.80 14.88 41.52Q13.76 45.24 13.76 49.88L13.76 49.88Q13.76 54.60 14.88 58.36Q16.00 62.12 18.08 64.76Q20.16 67.40 23.04 68.80Q25.92 70.20 29.52 70.20L29.52 70.20Q32.96 70.20 35.68 68.76Q38.40 67.32 40.72 64.68L40.72 64.68L45.20 69.56Q42.08 73.24 38.04 75.20Q34.00 77.16 28.72 77.16ZM67.36 47.64L67.36 47.64L65.20 54.84L79.68 54.84L77.52 47.64Q76.24 43.32 74.96 39Q73.68 34.68 72.56 30.20L72.56 30.20L72.24 30.20Q71.12 34.68 69.88 39Q68.64 43.32 67.36 47.64ZM58.80 76.20L50.64 76.20L67.92 23.80L77.20 23.80L94.48 76.20L86 76.20L81.52 61.16L63.28 61.16L58.80 76.20Z%22></path></svg>" />
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App *UPDATE*</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
